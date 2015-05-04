@@ -22,7 +22,6 @@ namespace AngularTodoList.Migrations
                 Priority = (byte)r.Next(10),
                 Text = o.ToString()
             }).ToArray();
-            context.Todoes.AddOrUpdate(item => new { item.Text }, items);
         }
     }
 }
