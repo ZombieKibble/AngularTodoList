@@ -3,7 +3,7 @@
 <form name="form" class="form-horizontal">
 <form-input label="To Do" input-id="Text" type="Text"></form-input>
 <form-input label="Priority" input-id="Priority" type="number"></form-input>
-<form-input label="Due Date" input-id="DueDate" typeof="date"></form-input>    
+<form-input label="Due Date" ng-model="item.DueDate" type="text" input-id="DueDate"></form-input>    
 
     <div class="form-actions">
         <button class="btn btn-primary" ng-click="save()">

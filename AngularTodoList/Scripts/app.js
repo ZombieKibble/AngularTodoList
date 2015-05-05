@@ -32,7 +32,7 @@ TodoApp.directive('sorted', function () {
 
 TodoApp.directive('formInput', function () {
     return {
-        restrict: 'AE',
+        restrict: 'E',
         compile: function (element, attrs) {
             var type = attrs.type || 'text';
             var required = attrs.hasOwnProperty('required') ? "required='required'" : "";
